@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>FlexBoxMedia</title>
+    <style>
+        body {
+            background-color: rgb(207, 210, 210);
+        }
+        
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: rgba(0, 43, 16, 0.89);
+            font-weight: bold;
+            color: #F6F3EB;
+        }
+        
+        .media {
+            display: flex;
+            align-items: flex-start;
+            background: #ffe49a;
+            padding: 1em;
+            border-radius: 3px;
+            max-width: 60em
+        }
+        
+        .mediaObject {
+            margin-right: 1em;
+            width: 180px;
+        }
+        
+        .mediaBody {
+            flex: 1;
+        }
+        
+        .heading {
+            margin: 0 0 15px;
+        }
+        
+        .para {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1>Wel Come To FlexBox Media Object</h1>
+    </header>
+    <br>
+    <div class="media">
+        <img class="mediaObject" src="assets/Dell.webp" alt="Sample photo">
+        <div class="mediaBody">
+            <h2 class="heading">Dell Laptop</h2>
+            <p class="para">Processor 11th Gen Intel® Core™ i7-11390H (12 MB cache, 4 cores, 8 threads, up to 5.00 GHz Turbo) Operating System Windows 11 Home Single Language, English Video Card NVIDIA® GeForce® MX450 with 2GB GDDR5 graphics memory.</p>
+
+            <div class="media">
+                <img class="mediaObject" src="assets/Lenovo.jpg" alt="Sample photo">
+                <div class="mediaBody">
+                    <h2 class="heading">Lenovo Laptop</h2>
+                    <p class="para">IdeaPad Slim 3i (14, Intel) An entry-level laptop shouldn’t slow you down. That’s why we engineered the 35.56cms (14) IdeaPad 3 with cutting-edge 10th Gen Intel® Core™ processing—as well as powerful memory and storage options.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
